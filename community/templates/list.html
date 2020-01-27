@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+</head>
+<body>
+    list
+    <ul>
+    {% for board in boardList %}
+        <li><a href="view/{{board.id}}">{ board.title }}</a> | {{ board.name }} | {{ board.cdate|date:"D d M Y" }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
